@@ -41,6 +41,11 @@ a {
     height: ;
     background-image: -moz-linear-gradient(#000000, #535353);
 }
+section {
+    max-width: 1140px;
+    margin: 0 auto;
+    margin-top: 100px;
+}
 .btn_primary {
     background-color: #E6533C;
     border: 0;
@@ -123,16 +128,61 @@ span {
 .video p {
     color: #ffffff;
 }
-
+.about_content {
+    text-align: center;
+}
+.content_tittle {
+    font-size: 3rem;
+}
+.box {
+    text-align: center;
+    margin-top: 70px;
+}
+.box img {
+    border-radius: 50%;
+    border: #535353 4px solid;
+}
+.about_box {
+    justify-content: space-between;
+}
+.mile_easy {
+    height: 270px;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #222222;
+    justify-content: space-between;
+    justify-items: center;
+}
+.mile_tittle {
+    font-size: 2rem;
+}
+.mile_content {
+    width: 443px;
+    height: 291px;
+}
+.mile_photo {
+    width: 366px;
+    height: 312px;
+}
+.mile_photo img {
+    width: 100%;
+    border-radius: 10px;
+}
 /* responsive Media */
 @media screen  and (max-width: 576px){
-    .navber, .banner {
+    .navber,
+     .banner,
+    .about_box,
+    .mile_easy {
         flex-direction: column;
     }
     .menu {
         display: none;
     }
-    ..banner_conent {
+    .banner_conent {
         width: 80%;
+    }
+    .mile_content {
+        margin-bottom: 20px;
     }
 }
